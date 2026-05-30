@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="contact" className="mx-auto max-w-6xl px-6 py-10">
       <div className="rounded-3xl border border-[#30363D] bg-[#161B22] p-8 text-center">
         <h2 className="text-3xl font-bold">Let’s Build Something</h2>
 

@@ -2,7 +2,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function Hero() {
   return (
-    <section className="mx-auto grid max-w-6xl gap-10 px-6 py-24 md:grid-cols-2 md:items-center">
+    <section className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-2 md:items-center">
       <div>
         {/* <p className="mb-4 text-sm font-medium text-[#58A6FF]">
           Frontend Developer

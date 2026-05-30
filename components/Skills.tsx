@@ -1,17 +1,8 @@
-const skills = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "Tailwind CSS",
-  "shadcn/ui",
-  "Zod",
-  "React Hook Form",
-  "Git",
-];
+import { skills } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="skills" className="mx-auto max-w-6xl px-6 py-10">
       <h2 className="text-3xl font-bold">Frontend Skills</h2>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-4">

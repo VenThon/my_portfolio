@@ -13,6 +13,9 @@ export default function Navbar() {
           <a href="#skills" className="hover:text-white">
             Skills
           </a>
+          <a href="#experience" className="hover:text-white">
+            Experience
+          </a>
           <a href="#projects" className="hover:text-white">
             Projects
           </a>

@@ -1,4 +1,4 @@
-import { LinkIcon, Mail } from "lucide-react";
+import { Laptop, LinkIcon, Mail } from "lucide-react";
 
 export default function SocialLinks() {
   return (
@@ -9,7 +9,7 @@ export default function SocialLinks() {
         rel="noopener noreferrer"
         className="rounded-xl border border-[#30363D] p-3 transition hover:border-[#58A6FF] hover:text-[#58A6FF]"
       >
-        <GitHub size={20} />
+        <Laptop size={20} />
       </a>
 
       <a
