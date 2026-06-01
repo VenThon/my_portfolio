@@ -1,14 +1,18 @@
 export const skills = [
-  "HTML",
-  "CSS",
-  "Javascript",
-  "Vue",
-  "NestJS",
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-  "shadcn/ui",
-  "React Hook Form",
-  "Git",
+  {
+    title: "Frontend",
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "ShadCN/UI"],
+  },
+  {
+    title: "Backend",
+    items: ["Next.js", "REST API Development"],
+  },
+  {
+    title: "Database",
+    items: ["PostgreSQL", "MySQL", "Drizzle ORM"],
+  },
+  {
+    title: "Tools",
+    items: ["Git", "GitHub", "GitLab", "Postman", "Docker"],
+  },
 ];

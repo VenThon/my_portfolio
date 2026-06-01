@@ -1,4 +1,5 @@
-import { Laptop, LinkIcon, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function SocialLinks() {
   return (
@@ -9,7 +10,7 @@ export default function SocialLinks() {
         rel="noopener noreferrer"
         className="rounded-xl border border-[#30363D] p-3 transition hover:border-[#58A6FF] hover:text-[#58A6FF]"
       >
-        <Laptop size={20} />
+        <FaGithub className="h-5 w-5" />
       </a>
 
       <a
@@ -18,7 +19,7 @@ export default function SocialLinks() {
         rel="noopener noreferrer"
         className="rounded-xl border border-[#30363D] p-3 transition hover:border-[#58A6FF] hover:text-[#58A6FF]"
       >
-        <LinkIcon size={20} />
+        <FaLinkedin className="h-5 w-5" />
       </a>
 
       <a

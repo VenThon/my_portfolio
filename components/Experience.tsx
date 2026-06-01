@@ -10,7 +10,6 @@ export default function Experience() {
             key={index}
             className="flex gap-4 rounded-2xl border border-[#30363D] bg-[#161B22] p-5 transition-colors hover:border-[#58A6FF]"
           >
-            {/* Logo */}
             <div className="shrink-0">
               <Image
                 src={item.imageSrc}
@@ -21,7 +20,6 @@ export default function Experience() {
               />
             </div>
 
-            {/* Content */}
             <div className="flex-1">
               <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
                 <div>
