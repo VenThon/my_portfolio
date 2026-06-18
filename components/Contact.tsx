@@ -19,7 +19,7 @@ export default function Contact() {
 
         <div className="flex items-center gap-6">
           <Link
-            href="mailto:your-email@example.com"
+            href="mailto:venthon71@gmail.com"
             className="rounded-xl border border-[#30363D] p-3 transition hover:border-[#58A6FF] hover:text-[#58A6FF]"
             aria-label="Email"
           >
@@ -36,7 +36,7 @@ export default function Contact() {
           </Link>
 
           <Link
-            href="https://github.com/your-github"
+            href="https://github.com/VenThon"
             target="_blank"
             className="rounded-xl border border-[#30363D] p-3 transition hover:border-[#58A6FF] hover:text-[#58A6FF]"
             aria-label="GitHub"

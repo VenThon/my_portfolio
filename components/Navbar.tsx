@@ -1,12 +1,10 @@
-import React from "react";
-
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-[#30363D] bg-[#0D1117]/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <h1 className="text-xl font-bold">THON.DEV</h1>
 
-        <div className="hidden gap-6 text-md font-bold text-gray-400 md:flex">
+        <div className="hidden gap-6 text-md font-bold text-gray-300 md:flex">
           <a href="#about" className="hover:text-white">
             About
           </a>
