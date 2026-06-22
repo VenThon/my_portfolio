@@ -14,10 +14,10 @@ export default function Hero() {
         </h2>
 
         <p className="mt-6 max-w-xl text-gray-400">
-          I build modern, responsive, and user-friendly web applications using
-          Next.js, TypeScript, and Tailwind CSS. Currently contributing to
-          digital transformation initiatives at MPTC as a Frontend Developer and
-          member of the Digital Transformation Working Group (DTWG).
+          I build modern, responsive, and user-friendly web applications.
+          Currently contributing to digital transformation initiatives at MPTC
+          as a Frontend Developer and member of the Digital Transformation
+          Working Group (DTWG).
         </p>
 
         <div className="mt-8 flex gap-4">

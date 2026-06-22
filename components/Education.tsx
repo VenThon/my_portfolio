@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <section id="educations" className="mx-auto max-w-6xl px-6 py-10">
       <div className="container">
-        <div className="mb-10">
+        <div className="mb-10 mt-7">
           <h2 className="text-3xl font-bold">Education & Certifications</h2>
           <p className="text-muted-foreground mt-2">
             My academic background and international learning experiences.

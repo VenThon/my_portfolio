@@ -4,8 +4,8 @@ export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-10">
       <div className="container mx-auto ">
-        <div className="mb-10">
-          <h2 className="text-3xl font-bold">Skills</h2>
+        <div className="mb-10 mt-7">
+          <h2 className="text-3xl font-bold"> Technical Skills</h2>
           <p className="text-muted-foreground mt-2">
             Technologies and tools I use to build modern web applications.
           </p>

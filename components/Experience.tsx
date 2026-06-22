@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-10">
-      <h2 className="text-3xl font-bold">Experience</h2>
+      <h2 className="mt-7 text-3xl font-bold text-white">Work Experience</h2>
       <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-2">
         {history.map((item, index) => (
           <div
