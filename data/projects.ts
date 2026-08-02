@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "FormKH",
     description:
-      "A full-stack form management system for creating, managing, and submitting digital forms.",
+      "FormKH is an online form builder that allows users to create custom forms for various purposes such as surveys, registrations, feedback, refinements and more.",
     tech: ["React", "Node.js", "Express.js", "PostgreSQL"],
     link: "https://form.gov.kh/",
   },
