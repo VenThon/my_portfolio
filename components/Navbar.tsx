@@ -16,13 +16,23 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-[#30363D] bg-[#0D1117]/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 md:py-5">
-        <h1 className="text-lg font-bold sm:text-xl">THON.DEV</h1>
+    <nav className="sticky top-0 z-50 border-b border-[#30363D] bg-[#0D1117]/90 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+        <a
+          href="#"
+          className="text-lg font-bold tracking-tight text-white sm:text-xl"
+          aria-label="Go to homepage"
+        >
+          THON<span className="text-[#58A6FF]">.DEV</span>
+        </a>
 
-        <div className="hidden gap-6 text-sm font-bold text-gray-300 md:flex lg:text-base">
+        <div className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-white">
+            <a
+              key={link.href}
+              href={link.href}
+              className="relative text-sm font-medium text-gray-400 transition-colors after:absolute after:right-0 after:-bottom-2 after:left-0 after:h-0.5 after:origin-left after:scale-x-0 after:bg-[#58A6FF] after:transition-transform hover:text-white hover:after:scale-x-100"
+            >
               {link.label}
             </a>
           ))}
@@ -31,22 +41,23 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="inline-flex items-center justify-center rounded-md text-gray-300 hover:text-white md:hidden"
-          aria-label="Toggle menu"
+          className="inline-flex size-10 cursor-pointer items-center justify-center rounded-lg border border-[#30363D] bg-[#161B22] text-gray-300 transition hover:border-[#58A6FF] hover:text-[#58A6FF] md:hidden"
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isOpen}
         >
-          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {isOpen ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
       </div>
 
       {isOpen && (
-        <div className="border-t border-[#30363D] px-4 py-4 md:hidden">
-          <div className="flex flex-col gap-4 text-sm font-bold text-gray-300">
+        <div className="border-t border-[#30363D] bg-[#0D1117] px-4 py-4 md:hidden">
+          <div className="mx-auto flex max-w-6xl flex-col gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="hover:text-white"
+                className="rounded-lg px-3 py-3 text-sm font-medium text-gray-300 transition hover:bg-[#161B22] hover:text-[#58A6FF]"
               >
                 {link.label}
               </a>

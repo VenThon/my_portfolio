@@ -2,6 +2,7 @@ export const educations = [
   {
     title: "Engineer's Degree in Computer Science",
     institution: "Institute of Technology of Cambodia (ITC)",
+    location: "ITC, Cambodia",
     period: "2019 - 2024",
     description:
       "Studied software engineering, system analysis and design, databases, web development, and software project management.",

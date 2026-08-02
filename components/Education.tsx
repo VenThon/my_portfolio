@@ -1,41 +1,71 @@
+import { GraduationCap } from "lucide-react";
+
 import { educations } from "@/data/education";
 
 export default function Education() {
   return (
-    <section id="educations" className="mx-auto max-w-6xl px-6 py-10">
-      <div className="container">
-        <div className="mb-10 mt-7">
-          <h2 className="text-3xl font-bold">Education & Certifications</h2>
-          <p className="text-muted-foreground mt-2">
-            My academic background and international learning experiences.
-          </p>
-        </div>
+    <section
+      id="educations"
+      className="scroll-mt-20 mx-auto max-w-6xl px-6 py-16"
+    >
+      <div className="mb-10">
+        <p className="text-sm font-semibold tracking-[0.16em] text-[#58A6FF] uppercase">
+          Learning Journey
+        </p>
 
-        <div className="mx-auto max-w-6xl space-y-6">
-          {educations.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-2xl border p-6 transition  hover:border-[#58A6FF]"
-            >
-              <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
+        <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          Education & Certifications
+        </h2>
 
-                  <p className="text-muted-foreground">
-                    {item.institution}
-                    {item.location && ` • ${item.location}`}
-                  </p>
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-gray-400 sm:text-base">
+          My academic background, professional certifications, and international
+          learning experiences in software engineering and technology.
+        </p>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2">
+        {educations.map((item) => (
+          <article
+            key={`${item.title}-${item.institution}`}
+            className="group flex h-full flex-col overflow-hidden rounded-3xl border border-[#30363D] bg-[#161B22] transition-colors hover:border-[#58A6FF]"
+          >
+            {/* Card header */}
+            <div className="border-b border-[#30363D] bg-linear-to-br from-[#172235] to-[#0D1117] p-5">
+              <div className="flex items-start gap-4">
+                <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl border border-[#30363D] bg-[#161B22] text-[#58A6FF] transition-colors group-hover:border-[#58A6FF]">
+                  <GraduationCap className="size-6" />
                 </div>
 
-                <span className="text-muted-foreground text-sm">
-                  {item.period}
-                </span>
-              </div>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-lg font-semibold leading-7 text-white">
+                    {item.title}
+                  </h3>
 
-              <p className="text-muted-foreground mt-4">{item.description}</p>
+                  <p className="mt-1 text-sm leading-6 text-gray-400">
+                    {item.institution}
+                  </p>
+
+                  {item.location && (
+                    <p className="mt-1 text-xs text-gray-500">
+                      {item.location}
+                    </p>
+                  )}
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
+
+            {/* Card content */}
+            <div className="flex flex-1 flex-col p-5 sm:p-6">
+              <span className="w-fit rounded-full border border-[#30363D] bg-[#0D1117] px-3 py-1 text-xs font-medium text-[#58A6FF]">
+                {item.period}
+              </span>
+
+              <p className="mt-5 flex-1 text-sm leading-7 text-gray-400 sm:text-base">
+                {item.description}
+              </p>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
